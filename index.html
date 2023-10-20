@@ -1,12 +1,37 @@
 <style>
+body {
+	background: #333c;
 img {
   width: 99vw;
 }
+  div {
+
+	  border-bottom: 5px solid #ccc;
+  }
+  p {
+
+    position: sticky;
+    top: 33px;
+    left: 33px;
+    color: #ccc;
+    background: linear-gradient(to right, #333 0% 200px, #333 300px, #3330 300px);
+    padding: 11px;
+    font-size: 22px;
+  }
 </style>
+<div>
+<p>600 px image @ 99vw</p>
 <img src="image-600w.webp"  alt="600px width source">
-    <br />
+</div>
+<div>
+<p>1200 px image @ 99vw</p>
 <img src="image-1200w.webp" alt="1200px width source">
-    <br />
+</div>
+<div>
+<p>2000 px image @ 99vw</p>
 <img src="image-2000w.webp" alt="2000px width source">
-    <br />
+</div>
+<div>
+<p>srcset image @ 99vw</p>
 <img srcset="image-600w.webp 1x, image-1200w.webp 2x, image-2000w.webp 3x" alt="srcset with all 3">
+</div>
